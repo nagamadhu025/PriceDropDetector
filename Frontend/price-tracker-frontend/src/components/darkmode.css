@@ -1,0 +1,324 @@
+/* ================================
+   DARK MODE - Modern Design
+   ================================ */
+
+/* Dark Mode Variables */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .sidebar {
+  background: #1e293b;
+  border-right-color: #334155;
+}
+
+body.dark-mode .sidebar-header h2 {
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+body.dark-mode .sidebar-toggle {
+  background: #334155;
+  color: #94a3b8;
+}
+
+body.dark-mode .sidebar-toggle:hover {
+  background: #475569;
+  color: #60a5fa;
+}
+
+body.dark-mode .user-info {
+  border-bottom-color: #334155;
+}
+
+body.dark-mode .user-name {
+  color: #f1f5f9;
+}
+
+body.dark-mode .user-email {
+  color: #94a3b8;
+}
+
+body.dark-mode .sidebar-nav button {
+  color: #94a3b8;
+}
+
+body.dark-mode .sidebar-nav button:hover {
+  background: #334155;
+  color: #60a5fa;
+}
+
+body.dark-mode .sidebar-nav button.active {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  color: white;
+}
+
+body.dark-mode .sidebar-nav .badge {
+  background: #334155;
+  color: #94a3b8;
+}
+
+body.dark-mode .sidebar-nav button.active .badge {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+body.dark-mode .sidebar-stats {
+  background: #0f172a;
+  border-top-color: #334155;
+}
+
+body.dark-mode .sidebar-stats h3 {
+  color: #64748b;
+}
+
+body.dark-mode .stat-item span {
+  color: #94a3b8;
+}
+
+body.dark-mode .stat-item strong {
+  color: #f1f5f9;
+}
+
+body.dark-mode .action-btn {
+  background: #1e293b;
+  border-color: #334155;
+  color: #cbd5e1;
+}
+
+body.dark-mode .action-btn:hover {
+  background: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+body.dark-mode .logout-btn {
+  background: #7f1d1d;
+  border-color: #991b1b;
+  color: #fca5a5;
+}
+
+body.dark-mode .logout-btn:hover {
+  background: #991b1b;
+  border-color: #b91c1c;
+}
+
+/* Main Content Dark Mode */
+body.dark-mode .content-header h1 {
+  color: #f1f5f9;
+}
+
+body.dark-mode .search-input,
+body.dark-mode .sort-select {
+  background: #1e293b;
+  border-color: #334155;
+  color: #e2e8f0;
+}
+
+body.dark-mode .search-input:focus,
+body.dark-mode .sort-select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+body.dark-mode .search-input::placeholder {
+  color: #64748b;
+}
+
+/* Product Cards Dark Mode */
+body.dark-mode .product-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+body.dark-mode .product-card:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .product-image-container {
+  background: #0f172a;
+  border-bottom-color: #334155;
+}
+
+body.dark-mode .product-name {
+  color: #f1f5f9;
+}
+
+body.dark-mode .price-item {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+body.dark-mode .price-label {
+  color: #64748b;
+}
+
+body.dark-mode .btn-secondary {
+  background: #334155;
+  color: #cbd5e1;
+}
+
+body.dark-mode .btn-secondary:hover {
+  background: #475569;
+  color: #f1f5f9;
+}
+
+body.dark-mode .btn-chart {
+  background: #312e81;
+  color: #c4b5fd;
+}
+
+body.dark-mode .btn-chart:hover {
+  background: #3730a3;
+}
+
+body.dark-mode .btn-danger {
+  background: #7f1d1d;
+  color: #fca5a5;
+}
+
+body.dark-mode .btn-danger:hover {
+  background: #991b1b;
+}
+
+/* Add Product Dark Mode */
+body.dark-mode .add-product {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+body.dark-mode .add-product:hover {
+  border-color: #3b82f6;
+}
+
+body.dark-mode .add-product h3 {
+  color: #f1f5f9;
+}
+
+body.dark-mode .add-product input {
+  background: #0f172a;
+  border-color: #334155;
+  color: #e2e8f0;
+}
+
+body.dark-mode .add-product input:focus {
+  border-color: #3b82f6;
+  background: #1e293b;
+}
+
+body.dark-mode .add-product input::placeholder {
+  color: #64748b;
+}
+
+/* No Products Dark Mode */
+body.dark-mode .no-products {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+body.dark-mode .no-products h3 {
+  color: #f1f5f9;
+}
+
+body.dark-mode .no-products p {
+  color: #94a3b8;
+}
+
+/* Chart Modal Dark Mode */
+body.dark-mode .chart-modal {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+body.dark-mode .chart-container {
+  background: #1e293b;
+  border: 1px solid #334155;
+}
+
+body.dark-mode .modal-close {
+  background: #334155;
+  color: #cbd5e1;
+}
+
+body.dark-mode .modal-close:hover {
+  background: #475569;
+}
+
+body.dark-mode .stat-box {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+body.dark-mode .chart-info {
+  border-top-color: #334155;
+}
+
+body.dark-mode .chart-info p {
+  color: #94a3b8;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  transition: all 0.3s;
+  z-index: 999;
+}
+
+.dark-mode-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode-toggle:active {
+  transform: scale(0.95);
+}
+
+body.dark-mode .dark-mode-toggle {
+  background: #1e293b;
+  border-color: #334155;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Smooth Transitions */
+.sidebar,
+.sidebar-header,
+.sidebar-nav button,
+.product-card,
+.add-product,
+.btn,
+input,
+select {
+  transition: all 0.3s ease;
+}
+
+/* Mobile Dark Mode Toggle */
+@media (max-width: 768px) {
+  .dark-mode-toggle {
+    bottom: 90px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+}

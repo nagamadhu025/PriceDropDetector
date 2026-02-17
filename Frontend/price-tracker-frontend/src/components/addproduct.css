@@ -1,0 +1,217 @@
+/* ================================
+   ADD PRODUCT - Modern Design
+   ================================ */
+
+.add-product {
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  padding: 24px;
+  margin-bottom: 28px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.add-product:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-color: #3b82f6;
+}
+
+/* Title */
+.add-product h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.add-product h3::before {
+  content: "➕";
+  font-size: 20px;
+}
+
+/* Form */
+.add-product form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Input Container */
+.input-group {
+  position: relative;
+}
+
+/* Inputs */
+.add-product input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: all 0.2s;
+  background: #f9fafb;
+}
+
+.add-product input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.add-product input::placeholder {
+  color: #9ca3af;
+}
+
+/* Input Icons (optional enhancement) */
+.add-product input[type="text"] {
+  padding-left: 44px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="%239ca3af" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3 3a1 1 0 0 0 1.42-1.42l-3-3A5 5 0 1 0 10 13zm0-8a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: 14px center;
+  background-size: 20px;
+}
+
+.add-product input[type="number"] {
+  padding-left: 44px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="%239ca3af" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>');
+  background-repeat: no-repeat;
+  background-position: 14px center;
+  background-size: 20px;
+}
+
+/* Button */
+.add-product button {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.add-product button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+
+.add-product button:active {
+  transform: translateY(0);
+}
+
+.add-product button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Messages */
+.add-product .message {
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.add-product .success {
+  background: #d1fae5;
+  color: #059669;
+  border: 1px solid #a7f3d0;
+}
+
+.add-product .success::before {
+  content: "✓";
+  width: 20px;
+  height: 20px;
+  background: #10b981;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.add-product .error {
+  background: #fee2e2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.add-product .error::before {
+  content: "⚠";
+  font-size: 18px;
+}
+
+/* Spinner */
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .add-product {
+    padding: 20px;
+  }
+
+  .add-product h3 {
+    font-size: 16px;
+  }
+
+  .add-product input {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+
+  .add-product input[type="text"],
+  .add-product input[type="number"] {
+    padding-left: 40px;
+    background-size: 18px;
+    background-position: 12px center;
+  }
+
+  .add-product button {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}

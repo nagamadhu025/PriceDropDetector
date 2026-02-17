@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+/* Page */
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f6f8fb;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Card */
+.login-box {
+  width: 380px;
+  padding: 40px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  animation: floatIn 0.5s ease;
+}
+
+/* animation */
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Input group */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+  outline: none;
+  transition: 0.25s ease;
+  background: #fafafa;
+}
+
+.input-group input:focus {
+  border-color: #2563eb;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Floating label */
+.input-group label {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  font-size: 13px;
+  color: #9ca3af;
+  pointer-events: none;
+  transition: 0.25s ease;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 10px;
+  font-size: 11px;
+  background: white;
+  padding: 2px 6px;
+  color: #2563eb;
+}
+
+/* Password toggle */
+.toggle-pass {
+  position: absolute;
+  right: 12px;
+  top: 14px;
+  font-size: 12px;
+  color: #2563eb;
+  cursor: pointer;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 14px;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background: #1e40af;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Toggle login/register */
+.toggle-text {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 14px;
+  color: #2563eb;
+  cursor: pointer;
+}
+
+/* Message */
+.message {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 14px;
+  color: #ef4444;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+/* Add these styles to your Login.css */
+
+/* OTP Verification Screen */
+.otp-instruction {
+  text-align: center;
+  color: #6b7280;
+  margin: 16px 0 24px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.otp-instruction strong {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+/* OTP Input Field */
+.otp-input {
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 8px;
+  font-weight: 700;
+  font-family: 'Courier New', monospace;
+}
+
+/* Resend Text */
+.resend-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.resend-link {
+  color: #3b82f6;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.resend-link:hover {
+  color: #2563eb;
+}
+
+/* Message Styles */
+.message {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.success-message {
+  background: #d1fae5;
+  color: #059669;
+  border: 1px solid #a7f3d0;
+}
+
+.error-message {
+  background: #fee2e2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
