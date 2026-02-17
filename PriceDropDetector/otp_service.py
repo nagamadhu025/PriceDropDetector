@@ -15,7 +15,7 @@ load_dotenv()
 
 # Email configuration - Using your Gmail
 SMTP_SERVER = "smtp.gmail.com"
-SMTP_PORT = 587
+SMTP_PORT = 465
 SENDER_EMAIL = os.getenv("EMAIL")  # nagamadhu025@gmail.com
 SENDER_PASSWORD = os.getenv("APP_PASSWORD")  # iovcuziyocufxbue
 
