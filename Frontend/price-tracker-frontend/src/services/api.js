@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://pricedropdetector-backend.onrender.com",
+  baseURL: "https://pricedropdetector-1.onrender.com",
 });
 
 // Automatically add Authorization header to every request

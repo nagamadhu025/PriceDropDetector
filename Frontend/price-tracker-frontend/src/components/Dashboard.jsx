@@ -363,7 +363,16 @@ function Dashboard() {
 
         {error && <div className="error-message">{error}</div>}
 
-        <AddProduct onProductAdded={fetchProducts} />
+       <AddProduct 
+  onProductAdded={(product) => {
+    fetchProducts();
+    // fallback notification
+    if (product) {
+      notificationService.showNewProductAlert(product);
+    }
+  }} 
+/>
+
 
         {filteredProducts.length === 0 ? (
           <div className="no-products">
@@ -425,14 +434,14 @@ function Dashboard() {
                         className="btn btn-chart"
                         onClick={() => openPriceChart(p)}
                       >
-                       price chart 📊
+                       price chart 
                       </button>
 
                       <button
                         className="btn btn-secondary"
                         onClick={() => toggleSubscription(p.id)}
                       >
-                      {p.subscribed ? "Unsubscribe⏸️" : "Subscribe▶️"}
+                      {p.subscribed ? "Unsubscribe" : "Subscribe"}
                       </button>
 
                       <a 
@@ -441,14 +450,14 @@ function Dashboard() {
                         rel="noopener noreferrer"
                         className="btn btn-primary"
                       >
-                        Buy 🛒
+                        Buy 
                       </a>
 
                       <button
                         className="btn btn-danger"
                         onClick={() => deleteProduct(p.id)}
                       >
-                        Delete🗑️
+                        Delete
                       </button>
                     </div>
                   </div>
