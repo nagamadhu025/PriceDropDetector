@@ -1,8 +1,9 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://pricedropdetector-1.onrender.com",
+  baseURL: import.meta.env.VITE_API_URL,
 });
+
 
 // Automatically add Authorization header to every request
 API.interceptors.request.use(
