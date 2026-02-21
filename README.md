@@ -14,8 +14,6 @@ Built with FastAPI (Backend) and React + Vite (Frontend).
 
 🔔 Get notified when price drops
 
-☁️ Cloud image storage (Cloudinary)
-
 📧 Email notifications
 
 🌐 Fully deployed (Backend + Frontend)
@@ -27,11 +25,6 @@ FastAPI
 
 SQLAlchemy
 
-JWT Authentication
-
-Cloudinary (Image storage)
-
-SMTP (Email service)
 
 🔹 Frontend
 
@@ -166,4 +159,5 @@ Pull requests are welcome. For major changes, open an issue first to discuss imp
 📜 License
 
 This project is licensed under the MIT License.﻿# PriceDropDetector
+
 
